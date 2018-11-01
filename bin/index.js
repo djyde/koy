@@ -3,7 +3,7 @@
 const carlo = require('carlo')
 const path = require('path')
 const filePath = process.argv[2]
-const {parse} = require('../lib/ey')
+const {parse} = require('../lib')
 
 ;(async () => {
   if (filePath) {

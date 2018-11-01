@@ -1,8 +1,8 @@
 {
-  "name": "ey",
-  "main": "lib/ey.js",
+  "name": "mpw",
+  "main": "lib/index.js",
   "bin": {
-    "ey": "bin/ey.js"
+    "mpw": "bin/index.js"
   },
   "version": "0.0.1",
   "dependencies": {
