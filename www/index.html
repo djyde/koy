@@ -3,15 +3,19 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>pmd</title>
+  <link href="style.css" rel="stylesheet"></link>
+  <title>Koy</title>
 </head>
 
 <body onload="main()">
-  <div id="content"></div>
+  <div style="padding: 2rem;">
+    <div class="markdown-body" id="content"></div>
+  </div>
   <script>
     async function main () {
-      const content = await window.parse()
+      const {content, filePath} = await window.parse()
       document.getElementById('content').innerHTML = content
+      document.title = `Koy - ${filePath}`
     }
   </script>
 </body>

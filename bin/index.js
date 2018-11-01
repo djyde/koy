@@ -9,7 +9,12 @@ const {parse} = require('../lib')
   if (filePath) {
     const app = await carlo.launch()
     app.serveFolder(path.resolve(__dirname, '../www'))
-    await app.exposeFunction('parse', _ => parse(filePath))
+    await app.exposeFunction('parse', _ => {
+      return {
+        content: parse(filePath),
+        filePath
+      }
+    })
     await app.load('index.html')
   }
 })()
