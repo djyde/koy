@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>pmd</title>
+</head>
+
+<body onload="main()">
+  <div id="content"></div>
+  <script>
+    async function main () {
+      const content = await window.parse()
+      document.getElementById('content').innerHTML = content
+    }
+  </script>
+</body>
+
+</html>

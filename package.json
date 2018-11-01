@@ -1,0 +1,12 @@
+{
+  "name": "ey",
+  "main": "lib/ey.js",
+  "bin": {
+    "ey": "bin/ey.js"
+  },
+  "version": "0.0.1",
+  "dependencies": {
+    "carlo": "^0.9.7",
+    "marked": "^0.5.1"
+  }
+}
