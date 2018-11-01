@@ -1,8 +1,8 @@
 {
-  "name": "mpw",
+  "name": "koy",
   "main": "lib/index.js",
   "bin": {
-    "mpw": "bin/index.js"
+    "koy": "bin/index.js"
   },
   "version": "0.0.1",
   "dependencies": {

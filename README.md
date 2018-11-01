@@ -1,15 +1,15 @@
-Ey is a markdown previewer based on [carlo](https://github.com/GoogleChromeLabs/carlo).
+Koy is a markdown previewer based on [carlo](https://github.com/GoogleChromeLabs/carlo).
 
 ## Install
 
 ```
-$ npm i ey -g
+$ npm i koy -g
 ```
 
 ## Usage
 
 ```
-$ ey README.md
+$ koy README.md
 ```
 
 # License
