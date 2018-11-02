@@ -1,6 +1,6 @@
 {
   "name": "koy",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "lib/index.js",
   "bin": {
     "koy": "bin/index.js"
@@ -11,7 +11,8 @@
   },
   "files": [
     "bin",
-    "lib"
+    "lib",
+    "www"
   ],
   "lint-staged": {
     "*.js": [
