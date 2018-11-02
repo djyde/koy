@@ -7,24 +7,11 @@
   <title>Koy</title>
 </head>
 
-<body onload="main()">
+<body>
   <div style="padding: 2rem;">
     <div class="markdown-body" id="content"></div>
   </div>
-  <script>
-    async function main() {
-      async function render() {
-        const { content, filePath } = await window.parse()
-        document.getElementById('content').innerHTML = content
-        document.title = `${filePath} - Koy`
-      }
-
-      await render()
-
-      const event = await rpc.lookup('event')
-      event.on('update', () => render())
-    }
-  </script>
+  <script src="./main.js"></script>
 </body>
 
 </html>
