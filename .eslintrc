@@ -1,4 +1,3 @@
 {
-  "extends": ["xo", "plugin:prettier/recommended"],
-  "plugins": ["html"]
+  "extends": ["xo", "plugin:prettier/recommended"]
 }
