@@ -29,6 +29,7 @@
     "carlo": "^0.9.10",
     "chokidar": "^2.0.4",
     "marked": "^0.5.1",
+    "prismjs": "^1.15.0",
     "update-notifier": "^2.5.0"
   },
   "devDependencies": {
