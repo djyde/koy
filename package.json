@@ -5,8 +5,14 @@
     "koy": "bin/index.js"
   },
   "version": "0.0.4",
+  "files": [
+    "bin",
+    "lib",
+    "www"
+  ],
   "dependencies": {
     "carlo": "^0.9.10",
+    "chokidar": "^2.0.4",
     "marked": "^0.5.1"
   }
 }
