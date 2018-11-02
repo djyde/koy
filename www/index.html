@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <link href="style.css" rel="stylesheet"></link>
+  <link href="style.css" rel="stylesheet">
   <title>Koy</title>
 </head>
 
@@ -12,10 +12,17 @@
     <div class="markdown-body" id="content"></div>
   </div>
   <script>
-    async function main () {
-      const {content, filePath} = await window.parse()
-      document.getElementById('content').innerHTML = content
-      document.title = `Koy - ${filePath}`
+    async function main() {
+      async function render() {
+        const { content, filePath } = await window.parse()
+        document.getElementById('content').innerHTML = content
+        document.title = `${filePath} - Koy`
+      }
+
+      await render()
+
+      const event = await rpc.lookup('event')
+      event.on('update', () => render())
     }
   </script>
 </body>
