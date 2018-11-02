@@ -1,18 +1,42 @@
 {
   "name": "koy",
+  "version": "0.0.4",
   "main": "lib/index.js",
   "bin": {
     "koy": "bin/index.js"
   },
-  "version": "0.0.4",
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "eslint ."
+  },
   "files": [
     "bin",
     "lib",
     "www"
   ],
+  "lint-staged": {
+    "*.js": [
+      "npm run lint -- --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "dependencies": {
     "carlo": "^0.9.10",
     "chokidar": "^2.0.4",
     "marked": "^0.5.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.8.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-config-xo": "^0.25.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "husky": "^1.1.3",
+    "lint-staged": "^8.0.4",
+    "prettier": "^1.14.3"
   }
 }

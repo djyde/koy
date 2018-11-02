@@ -5,7 +5,7 @@ const fs = require('fs')
 const path = require('path')
 const carlo = require('carlo')
 const chokidar = require('chokidar')
-const {parse} = require('../lib')
+const { parse } = require('../lib')
 const os = require('os')
 
 const tmpDir = path.resolve(os.tmpdir(), '.koy')
@@ -31,9 +31,10 @@ const main = async () => {
     })
     await app.load('index.html')
 
-    chokidar.watch(filePath, {
-      ignoreInitial: true
-    })
+    chokidar
+      .watch(filePath, {
+        ignoreInitial: true
+      })
       .on('change', () => {
         event.emit('update')
       })
