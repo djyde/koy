@@ -6,7 +6,7 @@
   },
   "version": "0.0.2",
   "dependencies": {
-    "carlo": "^0.9.7",
+    "carlo": "^0.9.10",
     "marked": "^0.5.1"
   }
 }
