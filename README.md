@@ -1,17 +1,28 @@
-![](https://user-images.githubusercontent.com/914329/47839466-c95b6d80-dded-11e8-835c-259bacea7a86.png)
+# Koy
 
-> Koy is a markdown previewer based on [carlo](https://github.com/GoogleChromeLabs/carlo).
+> Koy is a markdown previewer powered by [carlo](https://github.com/GoogleChromeLabs/carlo).
+
+![preview](https://user-images.githubusercontent.com/914329/47839466-c95b6d80-dded-11e8-835c-259bacea7a86.png)
+
+## Features
+
+- Read `README.md` in current working directory by default.
+- Render markdown in GitHub style.
+- Live preview, automatically re-render on file changes.
 
 ## Install
 
-```
+```bash
 $ npm i koy -g
 ```
 
 ## Usage
 
-```
-$ koy README.md
+```bash
+$ koy
+
+# Or a specific file
+$ koy some-file.md
 ```
 
 # License
