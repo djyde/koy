@@ -7,6 +7,10 @@ const carlo = require('carlo')
 const chokidar = require('chokidar')
 const { parse } = require('../lib')
 const os = require('os')
+const updateNotifier = require('update-notifier')
+const pkg = require('../package.json')
+
+updateNotifier({ pkg }).notify()
 
 const tmpDir = path.resolve(os.tmpdir(), '.koy')
 

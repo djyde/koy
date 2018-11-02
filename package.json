@@ -28,7 +28,8 @@
   "dependencies": {
     "carlo": "^0.9.10",
     "chokidar": "^2.0.4",
-    "marked": "^0.5.1"
+    "marked": "^0.5.1",
+    "update-notifier": "^2.5.0"
   },
   "devDependencies": {
     "eslint": "^5.8.0",
