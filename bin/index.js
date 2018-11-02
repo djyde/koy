@@ -19,6 +19,9 @@ const main = async () => {
       ? process.argv[2]
       : path.resolve(process.argv[2] || 'README.md')
 
+  // Parse content before creating carlo instance
+  const content = await parse(filePath)
+
   const app = await carlo.launch({
     userDataDir: tmpDir
   })
@@ -29,7 +32,6 @@ const main = async () => {
   const event = new Events()
   await app.exposeObject('event', event)
 
-  const content = await parse(filePath)
   await app.exposeFunction('parse', _ => {
     return {
       content,
