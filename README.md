@@ -23,6 +23,9 @@ $ koy
 
 # Or a specific file
 $ koy some-file.md
+
+# Or a README.md in Github repo
+$ koy gh:djyde/koy
 ```
 
 # License
