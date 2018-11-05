@@ -28,6 +28,7 @@
   "dependencies": {
     "carlo": "^0.9.10",
     "chokidar": "^2.0.4",
+    "conf": "^2.0.0",
     "marked": "^0.5.1",
     "node-fetch": "^2.2.0",
     "prismjs": "^1.15.0",

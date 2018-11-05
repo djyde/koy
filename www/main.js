@@ -13,4 +13,13 @@ async function main() {
   event.on('update', () => render())
 }
 
+window.onbeforeunload = () => {
+  window.updateWindowState({
+    height: window.outerHeight,
+    width: window.outerWidth,
+    left: window.screenX,
+    top: window.screenY
+  })
+}
+
 window.onload = main
