@@ -15,7 +15,7 @@ const tmpDir = path.resolve(os.tmpdir(), '.koy')
 
 const main = async () => {
   const filePath =
-    process.argv[2] && process.argv[2].startsWith('gh:')
+    process.argv[2] && /(npm)|(gh):/.test(process.argv[2])
       ? process.argv[2]
       : path.resolve(process.argv[2] || 'README.md')
 
