@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-const { EventEmitter } = require('events')
 const path = require('path')
 const carlo = require('carlo')
 const chokidar = require('chokidar')
@@ -24,10 +23,6 @@ const main = async () => {
   })
   app.serveFolder(path.resolve(__dirname, '../www'))
   app.on('exit', () => process.exit())
-  // Use the native EventEmitter will throw error when calling `event.on`
-  class Events extends EventEmitter {}
-  const event = new Events()
-  await app.exposeObject('event', event)
 
   await app.exposeFunction('parse', async _ => {
     const content = await parse(filePath)
@@ -43,7 +38,7 @@ const main = async () => {
       ignoreInitial: true
     })
     .on('change', () => {
-      event.emit('update')
+      app.evaluate(() => window.render()) // eslint-disable-line
     })
 }
 
