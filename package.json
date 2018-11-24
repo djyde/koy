@@ -1,6 +1,6 @@
 {
   "name": "koy",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "main": "lib/index.js",
   "bin": {
     "koy": "bin/index.js"
