@@ -1,5 +1,4 @@
 /* eslint-env browser */
-/* globals rpc */
 async function main() {
   async function render() {
     const { content, filePath } = await window.parse()
@@ -8,9 +7,7 @@ async function main() {
   }
 
   await render()
-
-  const event = await rpc.lookup('event')
-  event.on('update', () => render())
+  window.render = render
 }
 
 window.onload = main
