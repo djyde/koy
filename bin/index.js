@@ -27,7 +27,8 @@ const main = async () => {
   // Use the native EventEmitter will throw error when calling `event.on`
   class Events extends EventEmitter {}
   const event = new Events()
-  await app.exposeObject('event', event)
+
+  await app.evaluate(() => window.event = event) // eslint-disable-line
 
   await app.exposeFunction('parse', async _ => {
     const content = await parse(filePath)
