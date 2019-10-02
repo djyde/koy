@@ -1,8 +1,8 @@
 # Koy
 
-![](https://badgen.net/npm/v/koy)
-![](https://badgen.net/packagephobia/install/koy)
-![](https://badgen.net/badge//chrome?icon=chrome)
+[![](https://badgen.net/npm/v/koy)](https://npm.im/koy)
+[![](https://badgen.net/packagephobia/install/koy)](https://packagephobia.now.sh/result?p=koy)
+![](https://badgen.net/badge/icon/chrome?icon=chrome&label)
 
 > Koy is a markdown previewer powered by [Carlo](https://github.com/GoogleChromeLabs/carlo).
 
@@ -30,6 +30,9 @@ $ koy some-file.md
 
 # Or a README.md in Github repo
 $ koy gh:djyde/koy
+
+# Or stdin
+$ curl -sL https://github.com/djyde/koy/raw/master/README.md | koy
 
 # Or a README.md in NPM
 $ koy npm:koy
