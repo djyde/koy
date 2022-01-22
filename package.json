@@ -30,7 +30,7 @@
     "chokidar": "^2.0.4",
     "get-stdin": "^7.0.0",
     "marked": "^0.5.1",
-    "node-fetch": "^2.2.0",
+    "node-fetch": "^3.1.1",
     "prismjs": "^1.15.0",
     "update-notifier": "^2.5.0"
   },
