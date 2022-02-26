@@ -31,7 +31,7 @@
     "get-stdin": "^7.0.0",
     "marked": "^0.5.1",
     "node-fetch": "^2.2.0",
-    "prismjs": "^1.15.0",
+    "prismjs": "^1.27.0",
     "update-notifier": "^2.5.0"
   },
   "devDependencies": {
